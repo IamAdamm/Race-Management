@@ -1,0 +1,18 @@
+//Creating a random Racenumber for Participants
+let raceNumber = Math.floor(Math.random() * 1000);
+
+//values for the runner in question
+let runnerEarlyRegistration = true
+let runnerAge = 18;
+
+//Checking the Participants Age and early Registration and administrating them to a time based on the info
+if (runnerAge >= 18 && runnerEarlyRegistration === true){
+  raceNumber += 1000;
+  console.log('You will race at 9:30 am ' + raceNumber);
+} 
+else if (runnerAge >= 18 && runnerEarlyRegistration === false){
+  console.log('You will race at 11:00 am ' + raceNumber);
+} 
+else if (runnerAge < 18) {
+  console.log('You will race at 12:30 pm ' + raceNumber);
+}
